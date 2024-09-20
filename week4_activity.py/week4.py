@@ -70,6 +70,58 @@ print(text[0:11])
 # "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
 
 ##################################### String Methods#################################
+#uppercase method in python
+sentence = "Especially in electronic communication, writing in all caps is equivalent to yelling."
+print(sentence.upper()) #prints the sentence in uppercase 
+#lowercase method in python
+sentence2 = "ESPN IS THE BEST SPORTS NETWORK"
+print(sentence2.lower()) #prints the sentence in lowercase
+print(sentence.find("communications")) #prints the index of the word communications
+#uppercase the word "communications" in the sentence
+#use the slicing method
+print(sentence[25:38].upper()) #prints the word communications in uppercase
+print(sentence.replace("communications", "COMMUNICATIONS")) #prints the sentence with communications in uppercase
+#or can use the upper method
+print(sentence.replace("communications", "COMMUNICATIONS".upper())) #prints the sentence with the word communications in uppercase
+
+new_sentence = "if the implementation is hard to explain, it might be a bad idea."
+#replace the word hard with easy and bad with good
+modified_sentence = new_sentence.replace ("hard" , "easy").replace("bad" , "good")
+print(new_sentence)
+print(modified_sentence)
+
+#join method
+word_list = ["simple" , "is" , "better" , "then" , "complex"]
+print(word_list)
+joined_sentence = "".join(word_list)
+print(joined_sentence)
+new_word_list = ["apple" , "banana" , "mango" , "cherry" , "watermelon"]
+joined_sentence2 = " ".join(new_word_list)
+
+#split method
+sentence4 = "I am a python programmer"
+print(sentence4.split()) #splits the sentence into a list of words
+#this prints out as ['I', 'am', 'a', 'python', 'programmer']
+#by default, this methond splits the sentence by commas
+print(sentence4.split(",")) #splits the sentence into a list of words using a seperator
+#this prints out as ['I am a python programmer']
+print(sentence4.split("a")) #splits the sentence inot a list of words using a seperator
+
+#concatenation words in python repetition 15 times
+result = "Repetition " * 15
+print(result)
+
+#find the first paragraph in the declaration of independence
+#place it in a variable called first_paragraph
+#replace the word "people" with "citizens" in the first paragraph
+#print the first paragraph with the word people replaced with citizens
+#remove all the spaces, replace the commas with emojis
+
+first_paragraph = "We hold these truths to be self-evident, that all men are created equal, that they are endowed, by their Creator, with certain unalienable rights, that among these are life, liberty, and the pursuit of happiness.--That to secure these rights, governments are instituted among men, deriving their just powers from the consent of the governed, that whenever any form of government becomes destructive of these ends, it is the right of the people to alter or to abolish it, and to institute new government, laying its foundation on such principles, and organizing its powers in such form, as to them shall seem most likely to effect their safety and happiness. Prudence, indeed, will dictate, that governments long established, should not be changed for light and transient causes; and accordingly all experience hath shown, that mankind are more disposed to suffer, while evils are sufferable, than to right themselves by abolishing the forms to which they are accustomed. But when a long train of abuses and usurpations, pursuing invariably the same object, evinces a design to reduce them under absolute despotism, it is their right, it is their duty, to throw off such government, and to provide new guards for their future security. Such has been the patient sufferance of these Colonies; and such is now the necessity which constrains them to alter their former systems of government. The history of the present King of Great Britain is a history of repeated injuries and usurpations, all having in direct object the establishment of an absolute tyranny over these States. To prove this, let facts be submitted to a candid world."
+modified_paragraph = first_paragraph.replace ("people" , "citizens").replace("," , "😁").replace(" " , "")
+print(first_paragraph)
+print(modified_paragraph)
+
 # String Methods Practice #1
 #slieds 12 -16
 # Print the following text in uppercase, using the specific string method:
